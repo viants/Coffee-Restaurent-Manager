@@ -51,6 +51,7 @@
     <Compile Include="FormStyle\RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
+
     <Compile Include="Forms\DialogForms\AddStaffForm.cs">
       <SubType>Form</SubType>
     </Compile>

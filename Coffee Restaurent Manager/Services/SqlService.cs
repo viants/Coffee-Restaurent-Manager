@@ -12,6 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Net;
 using System.Xml.Linq;
 
+
 namespace Coffee_Restaurent_Manager.Services
 {
     internal class SqlService : IDisposable
@@ -24,7 +25,6 @@ namespace Coffee_Restaurent_Manager.Services
             conn.ConnectionString = connection;
             conn.Open();
         }
-
         public bool AddStaff(
             int id,
             int roleId,
