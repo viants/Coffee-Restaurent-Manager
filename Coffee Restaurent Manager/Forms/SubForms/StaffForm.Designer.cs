@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataView = new System.Windows.Forms.DataGridView();
             this.btn_Sign = new CustomControls.RJControls.RJButton();
             this.btn_AddStaff = new CustomControls.RJControls.RJButton();
             this.btn_Salary = new CustomControls.RJControls.RJButton();
             this.btn_StaffListAll = new CustomControls.RJControls.RJButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,12 +48,24 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataView.Location = new System.Drawing.Point(18, 119);
+            this.dataView.MultiSelect = false;
             this.dataView.Name = "dataView";
             this.dataView.ReadOnly = true;
+            this.dataView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataView.Size = new System.Drawing.Size(689, 307);
             this.dataView.TabIndex = 8;
+            this.dataView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellContentClick_1);
+            this.dataView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellContentClick);
             // 
             // btn_Sign
             // 
@@ -64,7 +78,7 @@
             this.btn_Sign.FlatAppearance.BorderSize = 0;
             this.btn_Sign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Sign.ForeColor = System.Drawing.Color.White;
-            this.btn_Sign.Location = new System.Drawing.Point(616, 32);
+            this.btn_Sign.Location = new System.Drawing.Point(616, 33);
             this.btn_Sign.Name = "btn_Sign";
             this.btn_Sign.Size = new System.Drawing.Size(91, 43);
             this.btn_Sign.TabIndex = 4;
@@ -89,6 +103,7 @@
             this.btn_AddStaff.Text = "New staff";
             this.btn_AddStaff.TextColor = System.Drawing.Color.White;
             this.btn_AddStaff.UseVisualStyleBackColor = false;
+            this.btn_AddStaff.Click += new System.EventHandler(this.btn_AddStaff_Click);
             // 
             // btn_Salary
             // 
@@ -138,10 +153,23 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Staff";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePicker1.CustomFormat = "";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(593, 93);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(114, 20);
+            this.dateTimePicker1.TabIndex = 9;
+            this.dateTimePicker1.Value = new System.DateTime(2023, 5, 28, 17, 43, 52, 0);
+            this.dateTimePicker1.Visible = false;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // StaffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataView);
             this.Controls.Add(this.btn_Sign);
             this.Controls.Add(this.btn_AddStaff);
@@ -150,6 +178,7 @@
             this.Controls.Add(this.label1);
             this.Name = "StaffForm";
             this.Size = new System.Drawing.Size(717, 436);
+            this.Load += new System.EventHandler(this.StaffForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -164,5 +193,6 @@
         private CustomControls.RJControls.RJButton btn_Salary;
         private CustomControls.RJControls.RJButton btn_StaffListAll;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

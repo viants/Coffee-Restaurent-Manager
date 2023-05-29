@@ -64,7 +64,7 @@ namespace Coffee_Restaurent_Manager
             this.customeControlBox.Controls.Add(this.btn_ClosedWindows);
             this.customeControlBox.Location = new System.Drawing.Point(0, 0);
             this.customeControlBox.Name = "customeControlBox";
-            this.customeControlBox.Size = new System.Drawing.Size(916, 35);
+            this.customeControlBox.Size = new System.Drawing.Size(931, 35);
             this.customeControlBox.TabIndex = 3;
             // 
             // pictureBox1
@@ -89,7 +89,7 @@ namespace Coffee_Restaurent_Manager
             this.btn_MinWindows.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MinWindows.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_MinWindows.ForeColor = System.Drawing.Color.White;
-            this.btn_MinWindows.Location = new System.Drawing.Point(803, 7);
+            this.btn_MinWindows.Location = new System.Drawing.Point(815, 7);
             this.btn_MinWindows.Name = "btn_MinWindows";
             this.btn_MinWindows.Size = new System.Drawing.Size(22, 22);
             this.btn_MinWindows.TabIndex = 5;
@@ -110,7 +110,7 @@ namespace Coffee_Restaurent_Manager
             this.btn_MaxWindows.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MaxWindows.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_MaxWindows.ForeColor = System.Drawing.Color.White;
-            this.btn_MaxWindows.Location = new System.Drawing.Point(841, 7);
+            this.btn_MaxWindows.Location = new System.Drawing.Point(853, 7);
             this.btn_MaxWindows.Name = "btn_MaxWindows";
             this.btn_MaxWindows.Size = new System.Drawing.Size(22, 22);
             this.btn_MaxWindows.TabIndex = 4;
@@ -131,7 +131,7 @@ namespace Coffee_Restaurent_Manager
             this.btn_ClosedWindows.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ClosedWindows.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_ClosedWindows.ForeColor = System.Drawing.Color.White;
-            this.btn_ClosedWindows.Location = new System.Drawing.Point(876, 7);
+            this.btn_ClosedWindows.Location = new System.Drawing.Point(888, 7);
             this.btn_ClosedWindows.Name = "btn_ClosedWindows";
             this.btn_ClosedWindows.Size = new System.Drawing.Size(22, 22);
             this.btn_ClosedWindows.TabIndex = 4;
@@ -168,9 +168,7 @@ namespace Coffee_Restaurent_Manager
             this.btn_Setting.FlatAppearance.BorderSize = 0;
             this.btn_Setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Setting.ForeColor = System.Drawing.Color.White;
-
-            this.btn_Setting.Location = new System.Drawing.Point(-1, 466);
-
+            this.btn_Setting.Location = new System.Drawing.Point(-1, 457);
             this.btn_Setting.Name = "btn_Setting";
             this.btn_Setting.Size = new System.Drawing.Size(185, 54);
             this.btn_Setting.TabIndex = 9;
@@ -190,9 +188,7 @@ namespace Coffee_Restaurent_Manager
             this.btn_Delivery.FlatAppearance.BorderSize = 0;
             this.btn_Delivery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Delivery.ForeColor = System.Drawing.Color.White;
-
-            this.btn_Delivery.Location = new System.Drawing.Point(0, 323);
-
+            this.btn_Delivery.Location = new System.Drawing.Point(0, 315);
             this.btn_Delivery.Name = "btn_Delivery";
             this.btn_Delivery.Size = new System.Drawing.Size(185, 58);
             this.btn_Delivery.TabIndex = 6;
@@ -211,9 +207,7 @@ namespace Coffee_Restaurent_Manager
             this.btn_Store.FlatAppearance.BorderSize = 0;
             this.btn_Store.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Store.ForeColor = System.Drawing.Color.White;
-
-            this.btn_Store.Location = new System.Drawing.Point(0, 382);
-
+            this.btn_Store.Location = new System.Drawing.Point(0, 374);
             this.btn_Store.Name = "btn_Store";
             this.btn_Store.Size = new System.Drawing.Size(185, 58);
             this.btn_Store.TabIndex = 8;
@@ -232,9 +226,7 @@ namespace Coffee_Restaurent_Manager
             this.btn_Staff.FlatAppearance.BorderSize = 0;
             this.btn_Staff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Staff.ForeColor = System.Drawing.Color.White;
-
-            this.btn_Staff.Location = new System.Drawing.Point(0, 264);
-
+            this.btn_Staff.Location = new System.Drawing.Point(0, 256);
             this.btn_Staff.Name = "btn_Staff";
             this.btn_Staff.Size = new System.Drawing.Size(185, 58);
             this.btn_Staff.TabIndex = 6;
@@ -254,9 +246,7 @@ namespace Coffee_Restaurent_Manager
             this.btn_Order.FlatAppearance.BorderSize = 0;
             this.btn_Order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Order.ForeColor = System.Drawing.Color.White;
-
-            this.btn_Order.Location = new System.Drawing.Point(0, 205);
-
+            this.btn_Order.Location = new System.Drawing.Point(0, 197);
             this.btn_Order.Name = "btn_Order";
             this.btn_Order.Size = new System.Drawing.Size(185, 58);
             this.btn_Order.TabIndex = 6;
@@ -275,9 +265,7 @@ namespace Coffee_Restaurent_Manager
             this.btn_DashBoard.FlatAppearance.BorderSize = 0;
             this.btn_DashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_DashBoard.ForeColor = System.Drawing.Color.White;
-
-            this.btn_DashBoard.Location = new System.Drawing.Point(0, 146);
-
+            this.btn_DashBoard.Location = new System.Drawing.Point(0, 138);
             this.btn_DashBoard.Name = "btn_DashBoard";
             this.btn_DashBoard.Size = new System.Drawing.Size(185, 58);
             this.btn_DashBoard.TabIndex = 6;
@@ -294,16 +282,16 @@ namespace Coffee_Restaurent_Manager
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.btn_search);
-            this.panel1.Location = new System.Drawing.Point(179, 35);
+            this.panel1.Location = new System.Drawing.Point(0, 35);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(763, 69);
+            this.panel1.Size = new System.Drawing.Size(920, 69);
             this.panel1.TabIndex = 5;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(476, 21);
+            this.textBox1.Location = new System.Drawing.Point(650, 21);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(195, 26);
             this.textBox1.TabIndex = 7;
@@ -320,9 +308,7 @@ namespace Coffee_Restaurent_Manager
             this.btn_search.FlatAppearance.BorderSize = 0;
             this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_search.ForeColor = System.Drawing.Color.White;
-
-            this.btn_search.Location = new System.Drawing.Point(653, 20);
-
+            this.btn_search.Location = new System.Drawing.Point(827, 20);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(69, 26);
             this.btn_search.TabIndex = 6;
@@ -338,7 +324,7 @@ namespace Coffee_Restaurent_Manager
             | System.Windows.Forms.AnchorStyles.Right)));
             this.staffForm1.Location = new System.Drawing.Point(185, 104);
             this.staffForm1.Name = "staffForm1";
-            this.staffForm1.Size = new System.Drawing.Size(733, 452);
+            this.staffForm1.Size = new System.Drawing.Size(725, 446);
             this.staffForm1.TabIndex = 7;
             // 
             // dashboard1
@@ -349,7 +335,7 @@ namespace Coffee_Restaurent_Manager
             this.dashboard1.BackColor = System.Drawing.SystemColors.Control;
             this.dashboard1.Location = new System.Drawing.Point(185, 104);
             this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(733, 452);
+            this.dashboard1.Size = new System.Drawing.Size(748, 452);
             this.dashboard1.TabIndex = 6;
             // 
             // MainForm
@@ -357,8 +343,7 @@ namespace Coffee_Restaurent_Manager
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(913, 554);
-
+            this.ClientSize = new System.Drawing.Size(920, 546);
             this.ControlBox = false;
             this.Controls.Add(this.leftPanel);
             this.Controls.Add(this.panel1);
