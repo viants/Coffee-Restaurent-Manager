@@ -22,7 +22,7 @@ namespace Coffee_Restaurent_Manager
             DrawingWindows();
             userControls.Add(this.dashboard1);
             userControls.Add(this.staffForm1);
-            
+            userControls.Add(this.order1);
         }
         private void HideAllUserControls()
         {
@@ -117,6 +117,11 @@ namespace Coffee_Restaurent_Manager
         private void btn_Setting_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Order_Click(object sender, EventArgs e)
+        {
+            ShowUserControl(this.order1);
         }
     }
 }

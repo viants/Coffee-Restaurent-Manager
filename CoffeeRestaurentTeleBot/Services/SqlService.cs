@@ -8,10 +8,11 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Collections;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Net;
 using System.Xml.Linq;
 
-namespace Coffee_Restaurent_Manager.Services
+namespace CoffeeRestaurentTeleBot.Services
 {
     internal class SqlService : IDisposable
     {
@@ -23,76 +24,8 @@ namespace Coffee_Restaurent_Manager.Services
             conn.ConnectionString = connection;
             conn.Open();
         }
+
         
-        public bool AddStaff(
-            int id,
-            int roleId,
-            bool gender,
-            string name = null,
-            string phoneNumber = null,
-            string address = null,
-            string email = null,
-            string avatar = null
-            )
-        {
-            bool result = false;
-            SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "sp_add_staff";
-            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
-            cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = name;
-            cmd.Parameters.Add("@roleId", SqlDbType.Int).Value = roleId;
-            cmd.Parameters.Add("@phoneNumber", SqlDbType.NVarChar).Value = phoneNumber; 
-            cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = address;
-            cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = email;
-            cmd.Parameters.Add("@avatar", SqlDbType.NVarChar).Value = avatar;
-            cmd.Parameters.Add("@gender", SqlDbType.Bit).Value = gender;
-            try
-            {
-                result = Convert.ToBoolean(cmd.ExecuteScalar());
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            return result;
-        }
-
-        public int UpdateStaff(
-            int id,
-            int roleId,
-            bool gender,
-            string name = null,
-            string phoneNumber = null,
-            string address = null,
-            string email = null,
-            string avatar = null)
-        {
-            int res = 0;
-            SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "sp_update_staff";
-            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
-            cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = name;
-            cmd.Parameters.Add("@roleId", SqlDbType.Int).Value = roleId;
-            cmd.Parameters.Add("@phoneNumber", SqlDbType.NVarChar).Value = phoneNumber; 
-            cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = address;
-            cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = email;
-            cmd.Parameters.Add("@avatar", SqlDbType.NVarChar).Value = avatar;
-            cmd.Parameters.Add("@gender", SqlDbType.Bit).Value = gender;
-            try
-            {
-                res = cmd.ExecuteNonQuery();
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            return res;
-        }
-
         public int ExcuseScalarQuery(string sql)
         {
             int res = -1;
@@ -111,6 +44,7 @@ namespace Coffee_Restaurent_Manager.Services
             }
             return res;
         }
+
         public bool PutDataQuery(string query)
         {
             bool res = false;

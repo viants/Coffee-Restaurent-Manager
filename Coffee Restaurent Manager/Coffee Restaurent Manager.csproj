@@ -51,12 +51,17 @@
     <Compile Include="FormStyle\RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
-
     <Compile Include="Forms\DialogForms\AddStaffForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\DialogForms\AddStaffForm.Designer.cs">
       <DependentUpon>AddStaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogForms\SignStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogForms\SignStaffForm.Designer.cs">
+      <DependentUpon>SignStaffForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DialogForms\UpdateStaffForm.cs">
       <SubType>Form</SubType>
@@ -70,11 +75,23 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ProductsUC\ProductView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductsUC\ProductView.Designer.cs">
+      <DependentUpon>ProductView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SubForms\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\SubForms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubForms\Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SubForms\Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SubForms\StaffForm.cs">
       <SubType>UserControl</SubType>
@@ -95,14 +112,23 @@
     <EmbeddedResource Include="Forms\DialogForms\AddStaffForm.resx">
       <DependentUpon>AddStaffForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogForms\SignStaffForm.resx">
+      <DependentUpon>SignStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DialogForms\UpdateStaffForm.resx">
       <DependentUpon>UpdateStaffForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductsUC\ProductView.resx">
+      <DependentUpon>ProductView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubForms\Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SubForms\StaffForm.resx">
       <DependentUpon>StaffForm.cs</DependentUpon>
@@ -142,8 +168,6 @@
   <ItemGroup>
     <None Include="Resources\file.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\PopupForms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

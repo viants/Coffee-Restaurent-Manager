@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee Restaurent Manager", "Coffee Restaurent Manager\Coffee Restaurent Manager.csproj", "{46B0E488-6765-4CD3-98C8-124B0BE532D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeRestaurentTeleBot", "CoffeeRestaurentTeleBot\CoffeeRestaurentTeleBot.csproj", "{A354FA68-B093-4D54-B246-085A3D5149B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{46B0E488-6765-4CD3-98C8-124B0BE532D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46B0E488-6765-4CD3-98C8-124B0BE532D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46B0E488-6765-4CD3-98C8-124B0BE532D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A354FA68-B093-4D54-B246-085A3D5149B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A354FA68-B093-4D54-B246-085A3D5149B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A354FA68-B093-4D54-B246-085A3D5149B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A354FA68-B093-4D54-B246-085A3D5149B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

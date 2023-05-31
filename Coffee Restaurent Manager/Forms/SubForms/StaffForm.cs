@@ -1,5 +1,4 @@
-
-﻿using Coffee_Restaurent_Manager.Forms.DialogForms;
+using Coffee_Restaurent_Manager.Forms.DialogForms;
 using Coffee_Restaurent_Manager.Services;
 using System;
 using System.Collections.Generic;
@@ -85,6 +84,12 @@ namespace Coffee_Restaurent_Manager.Forms.SubForms
         private void dataView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btn_Sign_Click(object sender, EventArgs e)
+        {
+            SignStaffForm form = new SignStaffForm();
+            form.ShowDialog();
         }
     }
 }

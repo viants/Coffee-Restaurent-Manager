@@ -64,7 +64,6 @@
             this.dataView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataView.Size = new System.Drawing.Size(689, 307);
             this.dataView.TabIndex = 8;
-            this.dataView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellContentClick_1);
             this.dataView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataView_CellContentClick);
             // 
             // btn_Sign
@@ -85,6 +84,7 @@
             this.btn_Sign.Text = "Sign";
             this.btn_Sign.TextColor = System.Drawing.Color.White;
             this.btn_Sign.UseVisualStyleBackColor = false;
+            this.btn_Sign.Click += new System.EventHandler(this.btn_Sign_Click);
             // 
             // btn_AddStaff
             // 
@@ -165,6 +165,7 @@
             this.dateTimePicker1.Value = new System.DateTime(2023, 5, 28, 17, 43, 52, 0);
             this.dateTimePicker1.Visible = false;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            //
             // StaffForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,7 +183,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

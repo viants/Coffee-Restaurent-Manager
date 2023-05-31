@@ -24,14 +24,6 @@ namespace Coffee_Restaurent_Manager.Forms
             
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            // Kiểm tra nếu Form2 đang được hiển thị thì hủy sự kiện đóng form
-            
-        }
-
-
-
         private void btn_Login_Click(object sender, EventArgs e)
         {
             string username = this.usernameTextbox.Text;
