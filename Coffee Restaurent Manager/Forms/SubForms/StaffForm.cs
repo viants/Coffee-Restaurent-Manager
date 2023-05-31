@@ -1,4 +1,4 @@
-﻿using Coffee_Restaurent_Manager.Forms.DialogForms;
+using Coffee_Restaurent_Manager.Forms.DialogForms;
 using Coffee_Restaurent_Manager.Services;
 using System;
 using System.Collections.Generic;
@@ -17,8 +17,6 @@ namespace Coffee_Restaurent_Manager.Forms.SubForms
         public StaffForm()
         {
             InitializeComponent();
-            
-
         }
 
         private string tableSelect;

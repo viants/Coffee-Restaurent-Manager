@@ -23,7 +23,7 @@ namespace Coffee_Restaurent_Manager.Services
             conn.ConnectionString = connection;
             conn.Open();
         }
-
+        
         public bool AddStaff(
             int id,
             int roleId,
@@ -111,7 +111,6 @@ namespace Coffee_Restaurent_Manager.Services
             }
             return res;
         }
-
         public bool PutDataQuery(string query)
         {
             bool res = false;

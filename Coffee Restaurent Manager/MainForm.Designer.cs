@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 
 namespace Coffee_Restaurent_Manager
 {
@@ -346,7 +346,6 @@ namespace Coffee_Restaurent_Manager
             this.order1.Name = "order1";
             this.order1.Size = new System.Drawing.Size(757, 452);
             this.order1.TabIndex = 8;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

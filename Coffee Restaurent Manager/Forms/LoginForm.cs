@@ -24,8 +24,6 @@ namespace Coffee_Restaurent_Manager.Forms
             
         }
 
-
-
         private void btn_Login_Click(object sender, EventArgs e)
         {
             string username = this.usernameTextbox.Text;
